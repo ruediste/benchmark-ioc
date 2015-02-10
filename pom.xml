@@ -62,6 +62,13 @@
 			<artifactId>javawriter</artifactId>
 			<version>2.2.1</version>
 		</dependency>
+
+
+		<dependency>
+			<groupId>com.github.ruediste</groupId>
+			<artifactId>salta</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
 	</dependencies>
 	<build>
 

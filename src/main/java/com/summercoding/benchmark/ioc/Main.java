@@ -6,13 +6,18 @@ import com.summercoding.benchmark.ioc.framework.PicoContainer;
 import com.summercoding.benchmark.ioc.framework.Spring;
 import com.summercoding.benchmark.ioc.framework.dagger.Dagger;
 import com.summercoding.benchmark.ioc.framework.guice.Guice;
+import com.summercoding.benchmark.ioc.framework.salta.SaltaContainer;
 import com.summercoding.benchmark.ioc.framework.silk.Silk;
 
 /**
  * @author: Rafal Leszko
  */
 public class Main {
-    private static final Framework[] FRAMEWORKS = {new NoContainer(), new Spring(), new PicoContainer(), new Guice(), new Silk(), new Dagger()};
+	private static final Framework[] FRAMEWORKS = { new NoContainer(),
+			new SaltaContainer()
+			//, new Guice(), new Silk(), new Dagger(),
+			//new PicoContainer(), new Spring() 
+	};
 
     private static final int TIMES = 10_000_000;
 
